@@ -8,7 +8,6 @@
     Illustrator: P. Picture, Category: Books, Price: $17.99,
     Length: 784 pages">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    
 </head>
 <body>
    <header class="page-header">
@@ -111,10 +110,9 @@
            </div>
            <span class="example__costs">Затраты на питание 15 000 Руб.</span>
            <picture class="example__image-big">
-           <source media="(min-width : 1200px)" srcset="img/img/raster/before-desktop@1x.png 1x" srcset="img/img/raster/before-desktop@2x.png 2x">
-           <source media="(min-width : 768px)" srcset="img/img/raster/before-tablet@1x.png 1x" srcset="img/img/raster/before-tablet@2x.png 2x">
-           <img src="img/img/raster/before-mobile@1x.png 1x" 
-           srcset="img/img/raster/before-mobile@2x.png 2x" alt="Cat-before-after" >
+           <source media="(min-width : 1200px)" srcset="img/img/raster/before-desktop@1x.png 1x, img/img/raster/before-desktop@2x.png 2x">
+           <source media="(min-width : 768px)" srcset="img/img/raster/before-tablet@1x.png 1x , img/img/raster/before-tablet@2x.png 2x">
+           <img src="img/img/raster/before-mobile@1x.png" srcset="img/img/raster/before-mobile@2x.png 2x" alt="Cat-before-after" >
            </picture>
            <div class="example__slider slider">
                <span class="slider__text">Было</span>
@@ -128,6 +126,7 @@
            
        </section>
        <section class="page-main__map map">
+          <h4 class="visually-hidden">Карта</h4>
            <div class="map__description"><span class="map__title">Приглашаем к сотрудничеству диллеров!</span><span class="map__text">ул. Большая Конюшенная, д.19/8 Санкт-Петербург</span></div>
            <div class="map__body">
                <picture>
