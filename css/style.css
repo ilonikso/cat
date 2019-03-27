@@ -312,8 +312,7 @@ template {
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/oswaldregular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/oswaldregular.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Oswald"), url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 /* oswald-500 - latin_cyrillic */
@@ -321,8 +320,7 @@ template {
   font-family: 'Oswald', sans-serif;
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/oswaldmedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/oswaldmedium.woff') format('woff');
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Oswald"), url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 html {
@@ -433,6 +431,11 @@ img {
   cursor: pointer;
   border: none;
 }
+.main-nav__toggle::before,
+.main-nav__toggle::after {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
 .main-nav__toggle:hover {
   background-color: #68b738;
 }
@@ -500,7 +503,7 @@ img {
 }
 .advertising {
   overflow: auto;
-  background-image: url(../../img/img/raster/index-background-mobile@1x.jpg);
+  background-image: url(../img/img/raster/index-background-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-position: top center;
 }
